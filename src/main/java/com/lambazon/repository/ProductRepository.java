@@ -22,6 +22,8 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 30, 69.99, "JVC HAFX8R Headphone", "Riptidz, In-Ear"));
 		products.put(++id, new Product(id, 40, 32.50, "VTech CS6114 DECT 6.0", "Cordless Phone"));
 		products.put(++id, new Product(id, 50, 895.00, "NOKIA OEM BL-5J", "Cell Phone "));
+		products.put(++id, new Product(id, 60, 1050.00, "APPLE IPHONE X", "Cell Phone new generation "));
+        products.put(++id, new Product(id, 15, 605.00, "DJI Phantom 3 ", "Drone DJI 4K "));
 	}
 	
 	public List<Product> products() {
