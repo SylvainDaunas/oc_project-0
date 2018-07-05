@@ -52,6 +52,9 @@ public class Product {
         return quantity;
     }
 
+    /**
+     * The quantity can not be negative
+     */
     public void setQuantity(int quantity) {
         if (quantity <= 0) {
             this.quantity = 0;
@@ -63,7 +66,9 @@ public class Product {
     public double getPrice() {
         return price;
     }
-
+    /**
+     * The price can not be negative and the price can not be over 1000
+     */
     public void setPrice(double price) {
         if (price <= 0) {
             this.price = 0;
@@ -73,7 +78,9 @@ public class Product {
             this.price = price;
         }
     }
-
+    /**
+     * The total price of the stock
+     */
     public double getInventoryPrice() {
         AllStockPrice = quantity * price;
         return AllStockPrice;
