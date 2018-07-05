@@ -29,18 +29,20 @@ public class ProductController {
 		model.addAttribute("prod", productService.product(id));
 		return "product";
 	}
-	
+
+    /**
+     * there is an error in the code.
+     * The number 123456.78 is commented.
+     * I delete unnecessary lines.
+     */
 	private double calculateTotalInventoryAmount() {
-		// TODO Auto-generated method stub
-		// return 123456.78;
-		
 		double totalInventoryAmount = 0.0;
 		for (Product p : productService.products()) {
 			totalInventoryAmount+=p.getInventoryPrice();
 		}
-		
+
 		return totalInventoryAmount;
-		
-		
+
+
 	}
 }
