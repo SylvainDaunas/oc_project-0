@@ -6,7 +6,7 @@ public class Product {
     private String name, description, details;
     private int quantity;
     private double price;
-    private double AllStockPrice;
+
 
     public Product(int id, int quantity, double price, String name, String description) {
         setId(id);
@@ -81,8 +81,10 @@ public class Product {
     /**
      * The total price of the stock
      */
+    private double allStockPrice;
     public double getInventoryPrice() {
-        AllStockPrice = quantity * price;
-        return AllStockPrice;
+
+        allStockPrice = quantity * price;
+        return allStockPrice;
     }
 }
