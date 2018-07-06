@@ -57,7 +57,7 @@ public class Product {
      */
     public void setQuantity(int quantity) {
         if (quantity <= 0) {
-            this.quantity = 0;
+            this.quantity = 0; // If quantity equal 0 or negative, result equal  0
         } else {
             this.quantity = quantity;
         }
@@ -71,9 +71,9 @@ public class Product {
      */
     public void setPrice(double price) {
         if (price <= 0) {
-            this.price = 0;
+            this.price = 0; // If the price equal 0 or negative, result equal  0
         } else if (price >= 1000) {
-            this.price = 1000;
+            this.price = 1000; // If the price egal 1000 or over, result equal  1000
         } else {
             this.price = price;
         }
@@ -81,10 +81,10 @@ public class Product {
     /**
      * The total price of the stock
      */
-    private double allStockPrice;
+    private double allStockPrice; // add value allStockPrice
     public double getInventoryPrice() {
 
-        allStockPrice = quantity * price;
+        allStockPrice = quantity * price; //added function multiplication quantity * price
         return allStockPrice;
     }
 }
